@@ -22,7 +22,7 @@ function validateForm(event) {
         return;
     }
 
-    if (password === "" || password.length < 6) {
+    if (password === "" || password.length > 6) {
         displayErrorMessage("Password must be at least 6 characters long.");
         return;
     }
